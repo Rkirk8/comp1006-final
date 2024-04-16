@@ -20,6 +20,8 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="games.php">Our Games</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="upload-logo.php">Upload Logo</a>
             </ul>
             <ul class="navbar-nav ms-auto">
                 <?php
