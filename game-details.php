@@ -65,6 +65,12 @@ else {
         <fieldset class="p-2">
             <label for="photo" class="col-2">Photo:</label>
             <input name="photo" id="photo" type="file" accept=".png,.jpg,jpeg" />
+            <!-- if selected game has a photo, display it using thumbnail -->
+            <?php if (!empty($game['photo'])) { ?>
+                <a href="img/game-uploads/<?php echo $game['photo']; ?>" target="_blank">
+                    <img src="img/game-uploads/<?php echo $game['photo']; ?>" class="thumbnail" />
+                </a>
+            <?php } ?>
         </fieldset>
         <input name="gameId" id="gameId" type="hidden" value="<?php echo $game['gameId']; ?>" />
         <input name="currentPhoto" id="currentPhoto" type="hidden" value="<?php echo $game['photo']; ?>" />
